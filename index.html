@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AB THERMI CONSTRUCTION PRO</title>
+<style>
+body {font-family: Arial, sans-serif; margin:0; padding:0; background:#f5f5f5; color:#333;}
+header {background:#004aad; color:white; padding:20px; text-align:center; position:sticky; top:0; z-index:1000;}
+nav {text-align:center; margin:10px 0;}
+nav button {margin:0 5px; padding:8px 15px; border:none; border-radius:5px; background:#ffd700; color:#004aad; font-weight:bold; cursor:pointer; transition:0.3s;}
+nav button:hover {background:#e6c200;}
+.hero {background-image: url('https://via.placeholder.com/1200x400?text=AB+THERMI'); background-size:cover; background-position:center; height:400px; display:flex; align-items:center; justify-content:center; color:white; font-size:2em; font-weight:bold; text-shadow:2px 2px 4px #000;}
+section {padding:40px 20px; max-width:1200px; margin:auto;}
+.services {display:flex; flex-wrap:wrap; gap:20px; justify-content:space-around;}
+.service {background:white; padding:20px; border-radius:8px; flex:1 1 250px; box-shadow:0 0 10px rgba(0,0,0,0.1); text-align:center; transition:transform 0.3s;}
+.service:hover {transform: translateY(-5px);}
+.service img {width:100%; height:180px; object-fit:cover; border-radius:5px;}
+.contact {background:#004aad; color:white; text-align:center; padding:40px 20px;}
+.contact a {color:#ffd700; text-decoration:none; font-weight:bold;}
+footer {background:#222; color:#aaa; text-align:center; padding:20px;}
+</style>
+</head>
+<body>
+<header>
+<h1 id="title">AB THERMI CONSTRUCTION PRO</h1>
+<p id="subtitle">خدمات العزل الحراري، صيانة الأفران والغلايات، وبيع Cheminée</p>
+<nav>
+<a href="#services" style="color:white; margin:0 10px; text-decoration:none;">خدمات</a>
+<a href="#contact" style="color:white; margin:0 10px; text-decoration:none;">تواصل</a>
+<button onclick="setLang('ar')">العربية</button>
+<button onclick="setLang('fr')">Français</button>
+<button onclick="setLang('en')">English</button>
+</nav>
+</header>
+<div class="hero" id="hero">شركتك لخدمات البناء والعزل</div>
+<section id="services">
+<h2 id="services-title">خدماتنا</h2>
+<div class="services">
+<div class="service">
+<img id="s1-img" src="https://via.placeholder.com/400x180?text=Isolation+Thermique" alt="العزل الحراري">
+<h3 id="s1-title">العزل الحراري</h3>
+<p id="s1-desc">تغطية أنابيب المصانع وأماكن العمل للعزل الحراري الكامل.</p>
+</div>
+<div class="service">
+<img id="s2-img" src="https://via.placeholder.com/400x180?text=Entretien+Chaudieres" alt="صيانة الغلايات">
+<h3 id="s2-title">صيانة الغلايات</h3>
+<p id="s2-desc">فحص وصيانة جميع أنواع الغلايات والأفران الصناعية.</p>
+</div>
+<div class="service">
+<img id="s3-img" src="https://via.placeholder.com/400x180?text=Chemin%C3%A9e" alt="Cheminée">
+<h3 id="s3-title">Cheminée</h3>
+<p id="s3-desc">تركيب وبيع Cheminée عالية الجودة للمنازل والمطاعم.</p>
+</div>
+<div class="service">
+<img id="s4-img" src="https://via.placeholder.com/400x180?text=Fours+Pizza+%26+Soufre" alt="أفران البيتزا والكبريت">
+<h3 id="s4-title">أفران البيتزا والكبريت</h3>
+<p id="s4-desc">صيانة وإعادة تركيب الأفران بمواصفات احترافية.</p>
+</div>
+</div>
+</section>
+<section class="contact" id="contact">
+<h2 id="contact-title">تواصل معنا</h2>
+<p id="phone">📞 الهاتف: +212 XX XXX XXXX</p>
+<p id="email">✉ البريد الإلكتروني: info@abthermi.com</p>
+<p id="website">🌐 الموقع الإلكتروني: www.abthermi.com</p>
+<p>💬 <a href="https://wa.me/212XXXXXXXXX" target="_blank" id="whatsapp">راسلنا على واتساب</a></p>
+</section>
+<footer>
+&copy; 2025 AB THERMI CONSTRUCTION PRO - جميع الحقوق محفوظة
+</footer>
+<script>
+const texts={ar:{dir:'rtl',hero:'شركتك لخدمات البناء والعزل',subtitle:'خدمات العزل الحراري، صيانة الأفران والغلايات، وبيع Cheminée',servicesTitle:'خدماتنا',s1:{title:'العزل الحراري',desc:'تغطية أنابيب المصانع وأماكن العمل للعزل الحراري الكامل.',img:'https://via.placeholder.com/400x180?text=Isolation+Thermique'},s2:{title:'صيانة الغلايات',desc:'فحص وصيانة جميع أنواع الغلايات والأفران الصناعية.',img:'https://via.placeholder.com/400x180?text=Entretien+Chaudieres'},s3:{title:'Cheminée',desc:'تركيب وبيع Cheminée عالية الجودة للمنازل والمطاعم.',img:'https://via.placeholder.com/400x180?text=Chemin%C3%A9e'},s4:{title:'أفران البيتزا والكبريت',desc:'صيانة وإعادة تركيب الأفران بمواصفات احترافية.',img:'https://via.placeholder.com/400x180?text=Fours+Pizza+%26+Soufre'},contactTitle:'تواصل معنا',phone:'📞 الهاتف: +212 XX XXX XXXX',email:'✉ البريد الإلكتروني: info@abthermi.com',website:'🌐 الموقع الإلكتروني: www.abthermi.com',whatsapp:'راسلنا على واتساب'},fr:{dir:'ltr',hero:'Votre entreprise de construction et isolation',subtitle:'Services d'isolation thermique, entretien des fours et chaudières, et vente de Cheminée',servicesTitle:'Nos Services',s1:{title:'Isolation Thermique',desc:'Couverture des tuyaux et installations industrielles pour une isolation complète.',img:'https://via.placeholder.com/400x180?text=Isolation+Thermique+FR'},s2:{title:'Entretien des Chaudières',desc:'Inspection et maintenance de tous types de chaudières et fours industriels.',img:'https://via.placeholder.com/400x180?text=Entretien+Chaudieres+FR'},s3:{title:'Cheminée',desc:'Installation et vente de Cheminée de haute qualité pour maisons et restaurants.',img:'https://via.placeholder.com/400x180?text=Chemin%C3%A9e+FR'},s4:{title:'Fours Pizza & Soufre',desc:'Maintenance et réinstallation de fours selon des normes professionnelles.',img:'https://via.placeholder.com/400x180?text=Fours+Pizza+FR'},contactTitle:'Contactez-nous',phone:'📞 Téléphone: +212 XX XXX XXXX',email:'✉ Email: info@abthermi.com',website:'🌐 Site Web: www.abthermi.com',whatsapp:'Contactez-nous sur WhatsApp'},en:{dir:'ltr',hero:'Your construction and insulation company',subtitle:'Thermal insulation, oven & boiler maintenance, and Cheminée sales',servicesTitle:'Our Services',s1:{title:'Thermal Insulation',desc:'Covering pipes and industrial areas for full thermal insulation.',img:'https://via.placeholder.com/400x180?text=Thermal+Insulation+EN'},s2:{title:'Boiler Maintenance',desc:'Inspection and maintenance of all types of industrial boilers and ovens.',img:'https://via.placeholder.com/400x180?text=Boiler+Maintenance+EN'},s3:{title:'Cheminée',desc:'Installation and sale of high-quality Cheminée for homes and restaurants.',img:'https://via.placeholder.com/400x180?text=Chemin%C3%A9e+EN'},s4:{title:'Pizza & Sulfur Ovens',desc:'Maintenance and reinstallation of ovens with professional standards.',img:'https://via.placeholder.com/400x180?text=Pizza+Ovens+EN'},contactTitle:'Contact Us',phone:'📞 Phone: +212 XX XXX XXXX',email:'✉ Email: info@abthermi.com',website:'🌐 Website: www.abthermi.com',whatsapp:'Chat with us on WhatsApp'}};
+function setLang(lang){const t=texts[lang];document.body.style.direction=t.dir;document.getElementById('hero').textContent=t.hero;document.getElementById('subtitle').textContent=t.subtitle;document.getElementById('services-title').textContent=t.servicesTitle;document.getElementById('s1-title').textContent=t.s1.title;document.getElementById('s1-desc').textContent=t.s1.desc;document.getElementById('s1-img').src=t.s1.img;document.getElementById('s2-title').textContent=t.s2.title;document.getElementById('s2-desc').textContent=t.s2.desc;document.getElementById('s2-img').src=t.s2.img;document.getElementById('s3-title').textContent=t.s3.title;document.getElementById('s3-desc').textContent=t.s3.desc;document.getElementById('s3-img').src=t.s3.img;document.getElementById('s4-title').textContent=t.s4.title;document.getElementById('s4-desc').textContent=t.s4.desc;document.getElementById('s4-img').src=t.s4.img;document.getElementById('contact-title').textContent=t.contactTitle;document.getElementById('phone').textContent=t.phone;document.getElementById('email').textContent=t.email;document.getElementById('website').textContent=t.website;document.getElementById('whatsapp').textContent=t.whatsapp;}
+setLang('ar');
+</script>
+</body>
+</html>
